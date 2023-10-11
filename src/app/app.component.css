@@ -1,0 +1,154 @@
+.leftpanel{
+    width: 45%;
+    height: 100%;
+    background-image: linear-gradient(#286DE0, #4285F4);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    overflow-x: auto;
+}
+
+
+.logo{
+    position: absolute;
+    font-size:large;
+    font-family: Poppins;
+    font-weight: 700;
+    margin-left: 4%;
+    margin-top: 4%;
+    line-height: 50%;
+    color: #FFFFFF;
+}
+
+.header{
+    position: absolute;
+    top: 45%;
+    left: 9%;
+    position: relative;
+    font-family: Montserrat;
+    font-weight:800;
+    color: #FFFFFF; 
+    font-size: 10vh;
+}
+
+.iconlist{
+    position: absolute;
+    height: 10%;
+    width: 25%;
+    left: 5%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    margin: 5%;
+}
+
+.rightpanel{
+    position: absolute;
+    width: 35%;
+    right: 10%;
+    top: 20%;
+    height: 50%;
+}
+
+.signinheader{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size:x-large;
+    margin: 0;
+    line-height: -20%;
+}
+
+.signInHeaderText{
+    font-size: small;
+    font-weight: 400;
+    margin: 0;
+    font-family: lato;
+}
+
+.signInButton{
+    display: inline-block;
+    font-size: 2vh;
+    margin-right: 5%;
+    margin-top: 5%;
+    color: #858585 !important;
+    width: 40%;
+    margin-bottom: 0;
+    margin-bottom: 10%;
+}
+
+.form{
+    border-radius: 5%;
+    height: 90%;
+    background-color: #FFFFFF;
+}
+
+label{
+    margin: 0;
+    font-family: Lato;
+    font-size: small;
+    font-weight: 600;
+    padding-bottom: 2px;
+}
+
+
+input{
+    font-size: 14px;
+    border-radius: 6px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+    border: 2px solid #dee1e2;
+    color: rgb(14, 14, 16);
+    background: #dee1e2;
+    display: block;
+    height: 30%;
+    width: 90%;
+}
+
+
+input:hover {
+    border-color: #4285F4;
+}
+input:focus{
+    border-color: #4285F4;
+    background: #fff;
+}
+
+
+.elementinput{
+    margin: 5%;
+
+    padding-top: 5%;
+}
+
+.logo{
+    position: relative;
+    width: 2vh;
+}
+
+.buttonlist{
+    height: 20%;
+}
+
+.forgotPassword{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: small;
+    color: #286DE0;
+}
+
+.signinbut{
+    width: 100%;
+    background-color: #4285F4 !important;
+}
+
+.register{
+    text-align: center;
+}
+
+.text{
+    font-family: Lato;
+    color: #858585;
+    font-weight: 400;
+    font-size: small;
+}
