@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+
+// Firebase imports
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
@@ -20,13 +23,24 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 
 @NgModule({
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    LoginComponent
+  ],
   imports: [
+    
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
+
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),
@@ -42,10 +56,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   exports: [
   ],
-  declarations: [
-    AppComponent,
-    DashboardComponent
-  ],
+
   providers: [
     ScreenTrackingService,UserTrackingService
   ],
